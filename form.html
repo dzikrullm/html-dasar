@@ -3,24 +3,45 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>form</title>
 </head>
 <body>
-
-<label for="username">username :</label>
-<input type="text" id="username">
-<br>
-<label for="password">password :</label>
-<input type="password" id="password">
-<br>
-<input type="radio" name="jeniskelamin" id="pria"><label for="pria">pria</label>
-<input type="radio" name="jeniskelamin" id="wanita"><label for="wanita">wanita</label>
-<br>
-<input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
-<input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
-<input type="checkbox" id="membaca"><label for="membaca">membaca</label>
-<br>
-<button type="submit">kirim</button>
+	
+<table cellpadding="2">
+<form>
+	<tr>
+	<td><label for="username">username :</label></td>
+	<td><input type="text" id="username"></td>
+	</tr>
+	<tr>
+	<td><label for="password">password :</label></td>
+	<td><input type="password" id="password"></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td colspan="2"><input type="radio" name="jeniskelamin" id="pria"><label for="pria">pria</label>
+	<input type="radio" name="jeniskelamin" id="wanita"><label for="wanita">wanita</label></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td colspan="2"><input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+	<input type="checkbox" id="membaca"><label for="membaca">membaca</label></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td colspan="2"><textarea></textarea></td>
+	<tr>
+	<td></td>
+	<td colspan="2"><select>
+		<option>cirebon</option>
+		<option>bandung</option>
+		<option>yogyakarta</option>
+	</select></td>
+	<tr>
+	<td colspan="2"><div align="center"><button type="submit">kirim</button></div></td>
+	</tr>
+</form>
+</table>
 
 </body>
 </html>
